@@ -35,7 +35,7 @@ header > .interface{
 }
 
 header a{
-    color:rgb(68, 68, 68);
+    color:rgb(121, 119, 119);
     text-decoration: none;
     display: inline-block;
     transition: .2s;
@@ -49,9 +49,9 @@ header a:hover{
 
 header nav ul{
     list-style: none;
-    display: flex; /* Garante que os itens fiquem em linha */
-    justify-content: center; /* Centraliza os itens horizontalmente */
-    flex-wrap: wrap; /* Permite quebra de linha em telas pequenas */
+    display: flex; 
+    justify-content: center; 
+    flex-wrap: wrap; 
 }
 
 header nav ul li{
@@ -76,29 +76,33 @@ section.topo-do-site .flex{
     font-size: 40px;
     line-height: 40px;
 }
-
-/* .topo-do-site .txt-topo-do-site p{
+.topo-do-site .txt-topo-do-site p{
 color: white;
-magin: 40px 0;
+margin: 40px 0;
 }
 
+.topo-do-site .img-topo-do-site {
+    display: flex;
+    justify-content: center;
+}
 
-/* .topo-do-site .img-topo-do-site img {
-    position:relative;
+.topo-do-site .img-topo-do-site img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
     animation: flutuar 2s ease-in-out infinite alternate;
 }
 
 @keyframes flutuar {
-    0%{
-        top: 0;
-    }
-    100% {
-        top: 30px;
-    }
+    0% { transform: translateY(0); }
+    100% { transform: translateY(30px); }
 }
 
-*/
-
-
-
+@media (max-width: 600px) {
+    .topo-do-site .img-topo-do-site img {
+        width: 150px;
+        height: 150px;
+    }
+}
 
