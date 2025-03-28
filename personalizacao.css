@@ -59,20 +59,6 @@ header nav ul li{
     margin: 10px 0;
 }
 
-.btn-contato button{
-    padding: 10px 40px; 
-    font-size: 18px;
-    font-weight: 600;
-    background-color: rgb(175, 129, 218);
-    border: 0;
-    border-radius: 30px;
-    cursor: pointer;
-    color: white;
-}
-
-.btn-contato:hover{
-    transform: scale(1.05);
-}
 /* topo do site*/
 
 section.topo-do-site{
@@ -88,13 +74,29 @@ section.topo-do-site .flex{
 .topo-do-site h1{
     color:white;
     font-size: 40px;
-    /*line-height: 40px; (para diminuir o espaço entre as linhas*/
+    line-height: 40px;
 }
 
 /* .topo-do-site .txt-topo-do-site p{
 color: white;
 magin: 40px 0;
 }
+
+
+/* .topo-do-site .img-topo-do-site img {
+    position:relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar {
+    0%{
+        top: 0;
+    }
+    100% {
+        top: 30px;
+    }
+}
+
 */
 
 
