@@ -71,11 +71,21 @@ section.topo-do-site .flex{
     gap: 90px;
 }
 
-.topo-do-site h1{
+.topo-do-site h1, .interface{
     color:white;
     font-size: 40px;
     line-height: 40px;
 }
+
+.topo-do-site .txt-topo-do-site p{
+    color:  white;
+    margin: 40px 0;
+}
+
+h1.titulos span {
+    color:blueviolet;
+}
+
 .topo-do-site .txt-topo-do-site p{
 color: white;
 margin: 40px 0;
@@ -106,3 +116,58 @@ margin: 40px 0;
     }
 }
 
+/*estilo do formulario*/
+
+section.formulario{ 
+    padding: 80px 4%;
+}
+
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+form input, form textarea{
+    width: 100%;
+    background-color: rgba(90, 87, 87, 0.301);
+    border: 0; 
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: white;
+    font-size: 18px;
+}
+
+form textarea{
+    resize: none;
+    height: 200px;
+}
+
+form .btn-enviar{
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .btn-enviar input[type=submit] {
+    width: 120px;
+    background-color: blueviolet;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+form .btn-enviar input:hover{
+    box-shadow: 0px 0px 8px blueviolet;
+    transform: scale(1.05);
+}
+
+.formulario {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+}
