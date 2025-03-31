@@ -96,8 +96,6 @@ margin: 40px 0;
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    object-fit: cover;
-    animation: flutuar 2s ease-in-out infinite alternate;
 }
 
 @keyframes flutuar {
