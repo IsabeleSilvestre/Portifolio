@@ -1,3 +1,4 @@
+/*Estilo geral*/
 * {
     margin: 0;
     padding: 0;
@@ -339,25 +340,26 @@ li {
     line-height: 1.6;
 }
 
-/*estilo do formulario*/
-
-section.formulario{ 
-    padding: 80px 4%;
+/* Estilo do formulario */
+section.formulario { 
+    padding: 100px 4%;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
 }
 
-form{
-    max-width: 500px;
+form {
+    width: 500px;
     margin: 0 auto;
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    gap: 10px;
-    margin-top: 40px;
+    gap: 25px;
+    margin-top: 0px;
 }
 
-form input, form textarea{
+form input, form textarea {
     width: 100%;
-    background-color: rgba(90, 87, 87, 0.301);
+    background-color: rgba(90, 87, 87, 0.3); 
     border: 0; 
     outline: 0;
     padding: 20px 15px;
@@ -366,31 +368,17 @@ form input, form textarea{
     font-size: 18px;
 }
 
-form textarea{
+form textarea {
     resize: none;
-    height: 300px;
+    min-height: 250px; 
 }
 
-form .btn-enviar{
+form .btn-enviar {
     margin-top: 20px;
     text-align: center;
 }
 
-form .btn-enviar input[type=submit] {
-    width: 200px;
-    background-color: blueviolet;
-    color: white;
-    font-weight: 700;
-    cursor: pointer;
-}
-
-.formulario {
-    min-height: 80vh;
-    display: flex;
-    align-items: center;
-}
-
-/* -- rodape---- */
+/* - rodape- */
 footer {
     background-color: #111;
     padding: 60px 4% 30px;
@@ -431,4 +419,45 @@ footer {
     border-top: 1px solid #333;
     color: #666;
     font-size: 0.9rem;
+}
+
+/* Botão */
+.botao {
+    background-color: rgb(32, 32, 32);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    font-family: monospace;
+    font-weight: bold;
+    width: 180px;
+    height: 50px;
+    cursor: pointer;
+    display: grid;
+    place-content: center;
+    transition: all 0.2s ease-in; 
+}
+
+.botao:hover {
+    background-color: blueviolet;
+    color: white;
+}
+
+.bolinha {
+    pointer-events: none;
+    width: 30px;
+    height: 30px;
+    animation: botao-bolinha 0.8s ease infinite;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: white;
+}
+
+@keyframes botao-bolinha {
+    0% {
+        transform: rotate(0turn);
+    }
+    100% {
+        transform: rotate(1turn);
+    }
 }
